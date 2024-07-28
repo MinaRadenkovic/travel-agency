@@ -20,11 +20,7 @@ The following is a description of the project structure:
 
 Author
 
-    Mina Radenković SV76/2022
-
-Support
-
-If you have any questions or issues with this project, feel free to contact me via email at [mina.radenkovic@gmail.com] or [radenkovic.sv76.2022@uns.ac.rs].
+    Mina Radenković
 
 Note
 
