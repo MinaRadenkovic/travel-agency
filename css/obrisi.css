@@ -1,0 +1,77 @@
+.obrisipopup {
+  position: fixed;
+  top: -300%;
+  left: 45%;
+  width: 10%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: #50b7c0;
+  margin: 1em 0 1em;
+  font-size: x-large;
+}
+
+.obrisipopup.active {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  width: 10%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+  top: -300%;
+  left: -50%;
+}
+
+.popup-content h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+  
+.popup-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background-color: red;
+  color: white;
+}
+
+.buttons button:last-child {
+  background-color: #ccc;
+}
+  
+p{
+  color: black;
+  font-weight: 500;
+}

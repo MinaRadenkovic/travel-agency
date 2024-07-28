@@ -1,0 +1,86 @@
+main {
+    margin-top: 5em;
+}
+
+thead {
+    color: white;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #50b7c0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th {
+    padding: 14px 15px;
+}
+
+.styled-table td {
+    padding: 8px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgb(243, 236, 222);
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #50b7c0;
+}
+
+td {
+    color: #50b7c0;
+    border: 0.4em solid #50b7c0;
+}
+
+thead>tr>td {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    color:white;
+}
+
+#agencije {
+    padding-left: 10vw;
+    background-color: #50b7c09e;
+    text-shadow: 3px 3px grey;
+    color: white;
+    font-size: 7ex;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%;
+}
+
+#k {
+    padding-left: 10vw;
+    background-color: #50b7c09e;
+    text-shadow: 3px 3px grey;
+    color: white;
+    font-size: 7ex;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%; 
+}
+
+#dva {
+    margin-top: 0;
+    padding-top: 0;
+}

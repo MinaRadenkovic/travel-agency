@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="pomoc-js-bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="pomoc-js-bootstrap/bootstrap/css/bootstrap.min.css.map">
+
+    <link rel="stylesheet" href="pomoc-js-bootstrap/bootstrap-5.2.3-dist/js/bootstrap.min.js">
+
+    <script src="pomoc-js-bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="pomoc-js-bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+    <link href="css/pocetna.css" rel="stylesheet">
+    <link href="css/agencija.css" rel="stylesheet">
+    <link href="css/futer.css" rel="stylesheet">
+    <link href="css/navbaribody.css" rel="stylesheet">
+    <link href="css/izmeni.css" rel="stylesheet">
+
+    <title> Izmena korisnika</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="levo">
+     <a class="navbar-brand" href="index.html"><img id="logo" src="slike/logo.png" alt="Moj logo"  height="70"></a></div>
+     <button id="dugmence" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+ <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></span>
+   </button><div class="collapse navbar-collapse">
+
+     <div class="dropdown d-flex levo">
+       <a href="index.html"><button class="dropbtn btn btn-outline-success" type="button"> Agencije 
+       </button></a>
+     </div>
+
+       <div class="d-flex levo">
+         <a href="admin.html"><button class="btn btn-outline-success" type="button"> Admin panel </button></a>
+         </div>
+
+
+     <div class="desno">
+
+       <form class="d-flex" role="search">
+         <input class="form-control me-2" type="search" placeholder="Pretraži" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit"> 
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+           </svg></button>
+       </form>
+
+       <form class="d-flex">
+       <button class="btn btn-outline-success" type="button" id="show-login">LOG IN  
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+           <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+         </svg>
+       </button>
+
+
+       <div class="popup" id="prijavljivanje">
+         <div class="close-btn" id="zatvorilog"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+         </svg></div>
+         <div class="form">
+           <h2>Log in</h2>
+           <div class="form-element">
+             <label for="korime"> Korisnicko ime </label>
+             <input type="text" id="korime" placeholder="Unesite korisnicko ime" required>
+             <p id="korisnickoime-error" class="error-message"></p>
+           </div>
+           <div class="form-element">
+             <label for="password"> Lozinka </label>
+             <input type="password" id="password" placeholder="Unesite lozinku" required>
+             <p id="password-error" class="error-message"></p>
+           </div>
+           <div class="form-element"><button class="btn btn-outline-success" type="button" id="prijavi">Prijavi se</button></div>
+           <p id="prijavise" class="error-message"></p>
+         </div>
+       </div>
+
+
+
+       <button class="btn btn-outline-success" type="button" id="show-reg">REGISTRACIJA</button>
+
+       <div class="popup" id="registracija">
+         <div class="close-btn" id="zatvorireg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+         </svg></div>
+         <div class="container">
+           <h2>Registracija</h2>
+           <form action="#">
+             <div class="form first">
+                 <div class="fields">
+                   <div class="input-field">
+                     <label for="ime"> Ime </label>
+                     <input type="text" id="ime" placeholder="Unesite Vaše ime" required>
+                     <p id="ime-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="prezime"> Prezime </label>
+                     <input type="text" id="prezime" placeholder="Unesite Vaše prezime" required>
+                     <p id="prezime-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="mejl"> Email </label>
+                     <input type="email" id="mejl" placeholder="Unesite Vaš email" required>
+                     <p id="mejl-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="adresa"> Adresa </label>
+                     <input type="text" id="adresa" placeholder="Unestite Vašu adresu" required>
+                     <p id="adresa-error" class="error-message"></p>
+                   </div>                    
+                   <div class="input-field">
+                     <label for="datumRodjenja"> Datum rođenja </label>
+                     <input type="date" id="datumRodjenja" placeholder="Unestite Vaš datum rođenja" required>
+                     <p id="datum-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="telefon"> Broj telefona </label>
+                     <input type="tel" id="telefon" placeholder="Unesite Vaš broj telefona" required>
+                     <p id="telefon-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="korimereg"> Korisnicko ime </label>
+                     <input type="text" id="korimereg" placeholder="Unesite korisnicko ime" required>
+                     <p id="korisnickoimereg-error" class="error-message"></p>
+                   </div>
+                   <div class="input-field">
+                     <label for="lozinkareg"> Lozinka </label>
+                     <input type="password" id="lozinkareg" placeholder="Unesite lozinku" required>
+                     <p id="lozinkareg-error" class="error-message"></p>
+                   </div>
+                   <button class="btn btn-outline-success submit" type="button" id="registruj">
+                     <span class="btnText">Registruj se</span>
+                     <i class="uil uil-navigator"></i>
+                   </button>
+                   <p id="registrujse" class="error-message"></p>
+             </div>
+         </div>
+       </form>
+     </div></div>
+ </nav>
+            <h1>Izmena korisnika</h1>
+    <main>
+        <div class="container">
+
+            <div class="formDiv">
+                <form name="editForm" id="editForm">
+                    <p>Ime: 
+                        <input type="text" name="ime" id="imeIzmena" placeholder="Ime">
+                        <p id="ime-greska" class="error-message"></p>
+                    </p>
+                    <p>Prezime: 
+                        <input type="text" name="prezime" id="prezimeIzmena" placeholder="Prezime">
+                        <p id="prezime-greska" class="error-message"></p>
+                    </p>
+                    <p>Email: 
+                        <input type="email" name="email" id="emailIzmena" placeholder="Email">
+                        <p id="mejl-greska" class="error-message"></p>
+                    </p>
+                    <p>Adresa: 
+                        <input type="text" name="adresa" id="adresaIzmena" placeholder="Adresa">
+                        <p id="adresa-greska" class="error-message"></p>
+                    </p>                    
+                    <p>Datum rođenja: 
+                        <input type="date" name="datumRodjenja" id="datumRodjenjaIzmena" placeholder="Datum rođenja">
+                        <p id="datum-greska" class="error-message"></p>
+                    </p>
+                    <p>Telefon:
+                        <input type="tel" name="telefon" id="telefonIzmena" placeholder="Telefon">
+                        <p id="telefon-greska" class="error-message"></p>
+                    </p>
+                    <p>Korisničko ime: 
+                        <input type="text" name="korisnickoIme" id="korisnickoImeIzmena" placeholder="korisničko ime">
+                        <p id="korisnickoimereg-greska" class="error-message"></p>
+                    </p>
+                    <p>Lozinka: 
+                        <input type="text" name="lozinka" id="lozinkaIzmena" placeholder="Lozinka">
+                        <p id="lozinkareg-greska" class="error-message"></p>
+                    </p>
+                    <button type="submit" class="btn btn-outline-success submit">Izmeni</button>
+                    <p id="izmeni" class="error-message"></p>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer><img src="slike/logo1.png" height="70"> <span>ŽIVI, VOLI, PUTUJ! </span><img src="slike/logo.png" height="70"></footer>
+
+</body> <script src="js/navbar.js"></script><script src="js/registracija.js"></script>
+<script src="js/izmeniKorisnike.js"></script>
+</html>

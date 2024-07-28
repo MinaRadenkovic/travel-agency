@@ -1,0 +1,124 @@
+.container {    
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #50b7c0;
+    background-color: #50b7c09e;
+    text-shadow: 3px 3px grey;
+    color: white;
+    font-size: 7ex;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%;
+    position: absolute;
+    top: 2em;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #50b7c0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th {
+    padding: 14px 15px;
+}
+
+.styled-table td {
+    padding: 8px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd){
+    background-color: white;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #50b7c0;
+}
+
+.submit {
+    padding: 5px 10px;
+    border: 2px solid #50b7c0; 
+    border-radius: 5px;
+    font-size: 1em;
+    color: #50b7c0;
+    background-color: white;
+    width: 93%;
+    margin-left: 3.5%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.formDiv {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 100%;
+}
+
+#izmeni {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+p  input {
+    width: 93%;
+    border: 1px solid  #50b7c0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+}
+
+p  textarea {
+    width: 93%;
+    border: 1px solid  #50b7c0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#izmeni:hover {
+    color:rgb(237, 196, 119);
+}
+
+@media (max-width: 448px){
+    main {
+        margin-top: 35%;
+    }
+}

@@ -1,0 +1,199 @@
+div.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    line-height: 1.4;
+}
+
+.col-6 {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.p-3 {
+    padding: auto;
+}
+
+.input-field input{
+    float: right;
+}
+
+h5.mt-0 {
+    font-size: 4.5ex;
+    font-family: 'Times New Roman', Times, serif;
+    align-self: center;
+    font-weight: bold;
+    padding: 0 0 0 5%;
+    text-shadow: 1px 1px grey;
+}
+
+.adresa, .telefon, .email, .godina, .destinacije {
+    margin-bottom: 0;
+}
+
+.col-md-6.ps-md-0 {
+    display: inline;
+    padding: 1.5rem ;
+}
+
+.row.bg-light.position-relative {
+    border: 0.4em solid #50b7c0;
+    border-radius: 0.25em;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin: 1em;
+    height: 100%;
+}
+
+.img-thumbnail {
+    padding: auto;
+    background-color: #50b7c0;
+    max-height: 20em;
+    width: auto;
+}
+
+.popup {
+    position: absolute;
+    top: -300%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%)  scale(1.25);
+    width: 45%;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 2px rgba(0,0,0,0.15);
+    border-radius: 3%;
+}
+#registracija {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+}
+
+.popup.active {
+    top:400%;
+    opacity: 1;
+    transform: translate(-50%, -50%)  scale(1);
+}
+
+input {
+    margin-top: auto;
+    display: block;
+    padding: auto;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#registruj {
+    width: 100%;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.popup .form .form-element button {
+    width: 100%;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.popup .close-btn {
+    position:absolute;
+    top:1em;
+    right: 1em;
+    width:1.5em;
+    height: 1.5em;
+    color:#222;
+    text-align: center;
+    line-height: normal;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: #222;
+    margin:1em 0 1em;
+    font-size: xx-large;
+}
+
+.popup .form .form-element {
+    margin: 1.5em 0;
+}
+
+.popup .form .form-element .label {
+    color: #222;
+}
+
+.popup .form .form-element input[type="text"], .popup .form .form-element input[type="password"]{
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    padding: auto;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px){
+    h5 {
+        padding: 5%;
+    }
+
+    .adresa.telefon.email.godina {
+        padding: 15%;
+    }  
+
+    .container {
+    max-width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    .img-thumbnail {
+        margin-bottom: 0px;
+    }
+
+    .row.g-2 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-6 {
+        max-width: 100%;
+    }
+
+    .adresa.telefon.email.godina {
+        padding: 0%;
+    } 
+}
+
+@media (max-width: 992px){
+    .row.g-2 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+    }
+    .col-6 {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 992px){
+.container {
+    max-width: 95%;
+    }
+}

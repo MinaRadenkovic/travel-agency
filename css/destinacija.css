@@ -1,0 +1,96 @@
+main{
+    margin-top: 5em;
+    width: 100%;
+}
+
+.d-block.w-100{
+    width: 25em;
+    height: auto;
+    max-height: 30vw;
+    min-height: 30vw;
+    object-fit: cover;
+    border: 0.4em solid #50b7c0;
+}
+
+#carouselExampleAutoplaying {
+    width: 75%;
+    margin: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: white; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: auto; 
+  height: auto;
+  font-size: medium; 
+  font-weight: bolder;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.706);
+  border: 0;
+}
+
+.carousel-control-prev, .carousel-control-next :hover {
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+
+.nazivDestinacije {
+    padding-left: 10vw;
+    background-color: #50b7c09e;
+    text-shadow: 3px 3px grey;
+    color: white;
+    font-size: 7ex;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%;
+    position: absolute;
+    top: 2em;
+}
+
+.opis {
+    background-color: white;
+    color: #50b7c0;
+    font-style: italic;
+    font-size: medium;
+    font-weight: 500;
+    padding: 2%;
+    text-align: justify;
+    width: 75%;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    border: 0.4em solid #50b7c0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.tip, .prevoz, .cena, .maxOsoba, .agencijeKojeVode {
+    padding-left: 8%;
+    margin-bottom: 0;
+    color: black;
+    font-size: medium;
+}
+
+.info {
+    background-color: white;
+    color: #50b7c0;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2%;
+    width: 75%;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    border: 0.3em solid #50b7c0;
+    margin-top: 1em;
+}
+
+.informacija {
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+    padding-left: 2%;
+}

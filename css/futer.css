@@ -1,0 +1,35 @@
+footer img {
+    max-height: 3em;
+    max-width: 3em;
+}
+
+footer {
+    background-color: white;
+    color:#50b7c0;
+    text-align: center;
+    text-shadow: 1px 1px grey;
+    font-weight: bold;
+    font-size: larger;
+    padding: 0.5em;
+    width: 100%;
+    vertical-align: baseline;
+    margin-top: auto;
+}
+
+span {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+  }
